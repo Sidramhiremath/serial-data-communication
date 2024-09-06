@@ -1,0 +1,16 @@
+org 0000h
+mov 30h,#00110010b
+mov 31h,#0dah
+mov 32h,#0ach
+mov R4,#00000011b
+here:
+mov r0,#30h
+mov r2,#40h
+mov a,@r0
+mov r2,a
+inc r0
+inc r2
+djnz r4,here
+end
+
+
